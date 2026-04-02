@@ -40,7 +40,7 @@ def analyze_with_gemini(page_img_bytes: bytes, api_key: str) -> dict:
     """Gemini APIでスライドを解析してJSON構造を返す"""
     import google.generativeai as genai
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-2.0-flash")
 
     prompt = """このPowerPointスライドの画像を解析してください。
 
